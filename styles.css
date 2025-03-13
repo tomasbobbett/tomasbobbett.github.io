@@ -54,3 +54,10 @@ img{
     width: 80%;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
+footer{
+    background:linear-gradient(#000,#333) black;
+    color: white;
+}
+a{
+    color: white;
+}
