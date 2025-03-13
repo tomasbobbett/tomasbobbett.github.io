@@ -2,14 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background:radial-gradient(circle, #bbb, #fff);
     box-sizing: border-box;
+    
 }
 header {
     background: linear-gradient(#333,#000);
     color: white;
     padding: 1rem;
     text-align: center;
+    max-height: max-content;
 }
 h2{
     margin-top: 10px;
@@ -29,10 +31,11 @@ h1{
 nav ul {
     list-style: none;
     padding: 0;
+    
 }
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin:auto;
 }
 nav ul li a {
     color: white;
@@ -58,6 +61,8 @@ img{
 footer{
     background:linear-gradient(#000,#333) black;
     color: white;
+    max-height:10000px;
+    position:static;
 }
 a{
     color: white;
