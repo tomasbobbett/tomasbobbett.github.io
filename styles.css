@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: linear-gradient(#333,#000);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+h2{
+    margin-top: 10px;
+}
+p{
+    margin: 0;
+}
+h1{
+    margin-top: 10px;
+}
+.nav__button{
+    padding: 10px;
+}
+.nav__button:hover{
+    background-color: #333;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+img{
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%
+}
+.proyecto {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
