@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background:radial-gradient(circle, #bbb, #fff);
+    background-color: #e8dae7;
     box-sizing: border-box;
     
 }
@@ -15,7 +15,7 @@ header {
 }
 h2{
     margin-top: 10px;
-}
+}   
 p{
     margin: 0;
 }
@@ -26,7 +26,7 @@ h1{
     padding: 10px;
 }
 .nav__button:hover{
-    background-color: rgb(96, 114, 92);
+    background-color: rgba(182, 181, 108, 0.148);
 }
 nav ul {
     list-style: none;
@@ -78,6 +78,16 @@ a{
     padding: 0;
     margin-bottom: 0;
     font-style: italic;
+}
+#sobre-mi{
+    width: 500px;
+    text-align: center;
+    margin:auto;
+    border: black 1px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 li{
     
