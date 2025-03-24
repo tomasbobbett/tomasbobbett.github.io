@@ -7,7 +7,7 @@ body {
     
 }
 header {
-    background: linear-gradient(#333,#000);
+    background:linear-gradient(#4b5a48,#60725c); 
     color: white;
     padding: 1rem;
     text-align: center;
@@ -26,7 +26,7 @@ h1{
     padding: 10px;
 }
 .nav__button:hover{
-    background-color: #333;
+    background-color: rgb(96, 114, 92);
 }
 nav ul {
     list-style: none;
@@ -59,7 +59,7 @@ img{
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 footer{
-    background:linear-gradient(#000,#333) black;
+    background:linear-gradient(#60725c,#333d31) black;
     color: white;
     max-height:10000px;
     position:static;
