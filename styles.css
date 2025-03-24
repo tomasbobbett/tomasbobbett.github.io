@@ -20,7 +20,10 @@ p{
     margin: 0;
 }
 h1{
+    color: rgb(236, 240, 215);
     margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: 2px;
 }
 .nav__button{
     padding: 10px;
