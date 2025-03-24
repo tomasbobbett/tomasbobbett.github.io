@@ -19,6 +19,10 @@ h2{
 p{
     margin: 0;
 }
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
 h1{
     color: rgb(236, 240, 215);
     margin-top: 10px;
@@ -55,11 +59,13 @@ img{
     border-radius: 50%
 }
 .proyecto {
-    background: white;
-    padding: 15px;
-    margin: 10px auto;
-    width: 80%;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+   margin:auto;
+   padding: 15px;
+   width: 80%;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 }
 footer{
     background:linear-gradient(#60725c,#333d31) black;
@@ -73,14 +79,20 @@ a{
 
 .lenguajes{
     text-align: center;
+
 }
 
 .lenguajes{
+    width: 100px;
     text-align: center;
-    box-sizing: border-box;
-    padding: 0;
+    font-weight: 400;
+    padding: 30px;
     margin-bottom: 0;
     font-style: italic;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    margin:auto;
+    border-radius: 10px;
 }
 #sobre-mi{
     width: 600px;
