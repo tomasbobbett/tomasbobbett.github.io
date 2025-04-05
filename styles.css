@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #e8dae7;
     box-sizing: border-box;
-    
+    color: rgb(91, 54, 45);
 }
 header {
     background:linear-gradient(#4b5a48,#60725c); 
@@ -22,6 +22,7 @@ p{
 h2{
     text-align: center;
     margin-top: 20px;
+
 }
 h1{
     color: rgb(236, 240, 215);
@@ -57,10 +58,11 @@ section {
     text-align: center;
 }
 img{
-    width: 150px;
+    width: 129px;
     margin: 0;
     padding: 0;
-    border-radius: 50%
+    border-radius: 50%;
+    border:  solid 3px rgb(236, 240, 215);
 }
 .proyecto {
    margin:auto;
