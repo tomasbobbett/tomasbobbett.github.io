@@ -1,64 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="imagenes/barak.JPG">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomas Bobbett - Portfolio personal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Layouts con FlexBox</title>
 </head>
 <body>
-    <header>
-        <img src="imagenes/Foto Carnet.jpeg" alt="">
-        <h1>Tomás Bobbett</h1>
-        <nav class="flex__nav">
-            <ul>
-                <li>
-                    <a class="nav__button" href="#sobre-mi-h2">Sobre mí</a>
-                </li>
-                <li>
-                    <a class="nav__button" href="#lenguajes">Lenguajes</a>
-                </li>
-                <li>
-                    <a class="nav__button" href="#proyectos">Proyectos</a>
-                </li>
-                <li>
-                    <a class="nav__button" href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <h2 id="sobre-mi-h2">Sobre mí</h2>
-    <section id="sobre-mi">
-        <p>Mi nombre es Tomás Bobbett y soy estudiante de la UBA actualmente en la carrera <b>lic. en analisis de sistemas</b>. Este es mi primer año como desarollador web y busco oportunidades para <em>crecer</em> y <em>aprender</em>.</p>
-    </section>
-    <section  id="lenguajes">
-        <h2>Lenguajes</h2>
-        <ul class="lenguajes">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>PYTHON</li>
-            <li>GO</li>
-            <li>C</li>
-        </ul>
-    </section>
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto">
-            <h3>WORK IN PROGRESS...</h3>
-            
+    <header class="header">
+        <div class="header__overlay">
+
         </div>
-    </section>
-   
-    <footer>
-        <section class="contacto" id="contacto">
-            <h2>Contacto</h2>
-            <p>Email: <a href="mailto:tomasbobbett04@gmail.com">tomasbobbett04@gmail.com</a></p>
-        </section>
-    </footer>
+        <div class="header__item-container">
+            <img class="header__img" src="../../Portfolio Personal WEB/imagenes/Foto Carnet.jpeg" alt="">
+            <h1>ADA 13 EDICION 2025</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam dignissimos eligendi expedita ipsa reiciendis, itaque aperiam. Voluptatum eaque rerum consequatur at, dignissimos placeat pariatur quibusdam blanditiis consequuntur minima nisi.</p>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__ul--container">
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="#" class="nav__link link--login">Log In</a></li>
+            </ul>
+        </div>
+        <div class="nav__img--container">
+            <img class="nav__img" src="../../clases html/Imagenes/logo.png">
+        </div>
+    </nav>
+    <main>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quidem debitis consequuntur dignissimos harum fugit, eaque quisquam non labore minus quas, sequi expedita tempore, nesciunt autem accusamus magni maiores esse.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vel voluptatem iste autem dicta hic nesciunt. Dolorum laboriosam sunt doloremque, perferendis quasi enim corporis, quas atque expedita tenetur fugit? Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla molestiae nostrum quos eveniet amet quo, exercitationem autem. Repudiandae dolor sint, doloremque eligendi quaerat nostrum quidem nisi amet aperiam dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, et repudiandae accusamus pariatur molestiae quam itaque vero odio quidem quasi neque eos ratione libero laudantium reprehenderit expedita eligendi sapiente id.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque fugiat, natus velit voluptas reiciendis veritatis placeat fuga, doloremque eum tempore minus cum ratione dicta molestias ducimus? Rerum, laudantium fugiat.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vel voluptatem iste autem dicta hic nesciunt. Dolorum laboriosam sunt doloremque, perferendis quasi enim corporis, quas atque expedita tenetur fugit? Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla molestiae nostrum quos eveniet amet quo, exercitationem autem. Repudiandae dolor sint, doloremque eligendi quaerat nostrum quidem nisi amet aperiam dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, et repudiandae accusamus pariatur molestiae quam itaque vero odio quidem quasi neque eos ratione libero laudantium reprehenderit expedita eligendi sapiente id.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque fugiat, natus velit voluptas reiciendis veritatis placeat fuga, doloremque eum tempore minus cum ratione dicta molestias ducimus? Rerum, laudantium fugiat.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vel voluptatem iste autem dicta hic nesciunt. Dolorum laboriosam sunt doloremque, perferendis quasi enim corporis, quas atque expedita tenetur fugit? Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla molestiae nostrum quos eveniet amet quo, exercitationem autem. Repudiandae dolor sint, doloremque eligendi quaerat nostrum quidem nisi amet aperiam dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, et repudiandae accusamus pariatur molestiae quam itaque vero odio quidem quasi neque eos ratione libero laudantium reprehenderit expedita eligendi sapiente id.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque fugiat, natus velit voluptas reiciendis veritatis placeat fuga, doloremque eum tempore minus cum ratione dicta molestias ducimus? Rerum, laudantium fugiat.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vel voluptatem iste autem dicta hic nesciunt. Dolorum laboriosam sunt doloremque, perferendis quasi enim corporis, quas atque expedita tenetur fugit? Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla molestiae nostrum quos eveniet amet quo, exercitationem autem. Repudiandae dolor sint, doloremque eligendi quaerat nostrum quidem nisi amet aperiam dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, et repudiandae accusamus pariatur molestiae quam itaque vero odio quidem quasi neque eos ratione libero laudantium reprehenderit expedita eligendi sapiente id.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque fugiat, natus velit voluptas reiciendis veritatis placeat fuga, doloremque eum tempore minus cum ratione dicta molestias ducimus? Rerum, laudantium fugiat.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vel voluptatem iste autem dicta hic nesciunt. Dolorum laboriosam sunt doloremque, perferendis quasi enim corporis, quas atque expedita tenetur fugit? Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla molestiae nostrum quos eveniet amet quo, exercitationem autem. Repudiandae dolor sint, doloremque eligendi quaerat nostrum quidem nisi amet aperiam dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, et repudiandae accusamus pariatur molestiae quam itaque vero odio quidem quasi neque eos ratione libero laudantium reprehenderit expedita eligendi sapiente id.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque fugiat, natus velit voluptas reiciendis veritatis placeat fuga, doloremque eum tempore minus cum ratione dicta molestias ducimus? Rerum, laudantium fugiat.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vel voluptatem iste autem dicta hic nesciunt. Dolorum laboriosam sunt doloremque, perferendis quasi enim corporis, quas atque expedita tenetur fugit? Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla molestiae nostrum quos eveniet amet quo, exercitationem autem. Repudiandae dolor sint, doloremque eligendi quaerat nostrum quidem nisi amet aperiam dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, et repudiandae accusamus pariatur molestiae quam itaque vero odio quidem quasi neque eos ratione libero laudantium reprehenderit expedita eligendi sapiente id.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque fugiat, natus velit voluptas reiciendis veritatis placeat fuga, doloremque eum tempore minus cum ratione dicta molestias ducimus? Rerum, laudantium fugiat.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vel voluptatem iste autem dicta hic nesciunt. Dolorum laboriosam sunt doloremque, perferendis quasi enim corporis, quas atque expedita tenetur fugit? Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla molestiae nostrum quos eveniet amet quo, exercitationem autem. Repudiandae dolor sint, doloremque eligendi quaerat nostrum quidem nisi amet aperiam dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, et repudiandae accusamus pariatur molestiae quam itaque vero odio quidem quasi neque eos ratione libero laudantium reprehenderit expedita eligendi sapiente id.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque fugiat, natus velit voluptas reiciendis veritatis placeat fuga, doloremque eum tempore minus cum ratione dicta molestias ducimus? Rerum, laudantium fugiat.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vel voluptatem iste autem dicta hic nesciunt. Dolorum laboriosam sunt doloremque, perferendis quasi enim corporis, quas atque expedita tenetur fugit? Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla molestiae nostrum quos eveniet amet quo, exercitationem autem. Repudiandae dolor sint, doloremque eligendi quaerat nostrum quidem nisi amet aperiam dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, et repudiandae accusamus pariatur molestiae quam itaque vero odio quidem quasi neque eos ratione libero laudantium reprehenderit expedita eligendi sapiente id.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque fugiat, natus velit voluptas reiciendis veritatis placeat fuga, doloremque eum tempore minus cum ratione dicta molestias ducimus? Rerum, laudantium fugiat.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vel voluptatem iste autem dicta hic nesciunt. Dolorum laboriosam sunt doloremque, perferendis quasi enim corporis, quas atque expedita tenetur fugit? Maiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus nulla molestiae nostrum quos eveniet amet quo, exercitationem autem. Repudiandae dolor sint, doloremque eligendi quaerat nostrum quidem nisi amet aperiam dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, et repudiandae accusamus pariatur molestiae quam itaque vero odio quidem quasi neque eos ratione libero laudantium reprehenderit expedita eligendi sapiente id.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eaque fugiat, natus velit voluptas reiciendis veritatis placeat fuga, doloremque eum tempore minus cum ratione dicta molestias ducimus? Rerum, laudantium fugiat.
+    </main>
 </body>
 </html>
