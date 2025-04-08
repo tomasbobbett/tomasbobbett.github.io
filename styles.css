@@ -44,9 +44,9 @@ h1{
 }
 
 .nav__button{
-    padding: 5px;
+    padding: 7px;
     color: #60725c;
-    font-size: 18px;
+    font-size: 16px;
     transition: border-radius 0.3s;
 }
 .nav__button:hover{
