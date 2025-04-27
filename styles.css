@@ -12,7 +12,7 @@ html{
 .header{
     box-sizing: border-box;
     background-size: cover;
-    background:linear-gradient(#4b5a48,#60725c); 
+    background: linear-gradient(#add8e6, #00008b);
     color: #ffffff;
     display: flex;
     min-height: 100vh;
