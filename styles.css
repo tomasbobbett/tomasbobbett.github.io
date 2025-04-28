@@ -59,15 +59,18 @@ h1{
 }
 
 .scroll__button a {
-    color: #530303;
+    color: #242d05;
     text-decoration: none;
+    box-sizing:border-box;
+    
+    padding: 2px 15px;
 }
 .scroll__button{
     scroll-behavior: smooth;
     position: absolute;
     margin: 10px;
     right: 0;
-    text-align: center;
+   
     bottom: 0;
     border: 1px solid #000;
     box-shadow: 1px 1px 10px rgb(0, 0, 0);
@@ -75,8 +78,7 @@ h1{
     min-height: 75px;
     min-width: 75px;
     border-radius: 10px;
-    background:radial-gradient(#c55151,#d01c1c);
-    box-sizing: border-box;
+    background:radial-gradient(#ce8758,#a95020);
     transition: min-height 0.2s, min-width 0.2s, box-shadow 0.2s;
     display: flex;
     justify-content: center;
