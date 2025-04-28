@@ -12,7 +12,7 @@ html{
 .header{
     box-sizing: border-box;
     background-size: cover;
-    background: linear-gradient(#add8e6, #00008b);
+    background:linear-gradient(#4b5a48,#60725c); 
     color: #ffffff;
     display: flex;
     min-height: 100vh;
@@ -33,7 +33,7 @@ p{
 h2{
     text-align: center;
     margin-top: 20px;
-    color: #47969f;
+    color: #60725c;
 }
 h1{
     color: rgb(236, 240, 215);
@@ -44,7 +44,7 @@ h1{
 
 .nav__button{
     padding: 5px;
-    color: #47969f;
+    color: #60725c;
     font-size: 18px;
     transition: border-radius 0.3s;
 }
@@ -59,9 +59,8 @@ h1{
 }
 
 .scroll__button a {
-    color: #ffffff;
+    color: #530303;
     text-decoration: none;
-    display: block;
 }
 .scroll__button{
     scroll-behavior: smooth;
@@ -76,12 +75,13 @@ h1{
     min-height: 75px;
     min-width: 75px;
     border-radius: 10px;
-    background:linear-gradient(#5161c5, #3406ad);
+    background:radial-gradient(#c55151,#d01c1c);
     box-sizing: border-box;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     transition: min-height 0.2s, min-width 0.2s, box-shadow 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .scroll__button:hover{
     min-height: 90px;
@@ -175,7 +175,7 @@ footer{
     margin:auto;
     border-radius: 10px;
     margin-top: 20px;
-    background-color: rgba(71, 150, 159, 0.29);
+    background-color: #e3e6d5;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 }
 li{
