@@ -4,7 +4,8 @@
 body, h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+
+    font-family:  "Cal Sans";
 }
 .header{
     z-index: -2;
@@ -16,21 +17,21 @@ body, h1, h2, h3, h4, h5, h6, p{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0px 0px 9px #7070707f;
+    text-shadow: 0px 0px 9px  #7070707f;
     flex-wrap: wrap;
     border: 1px solid #000;
     padding: 30px;
     text-wrap: pretty;
+    gap: 10px;
 }
 /*----- HEADER NAME -----*/
 .header__container__name{
-    font-family:  "Cal Sans";
     font-weight: 100;
     letter-spacing: 3px;
     margin: auto;
     display: inline-block;
     font-size: clamp(1.5rem, 5vw, 3rem);
-    margin-left: 5% ;
+    margin: auto ;
 
     position: relative;
     padding: 0;
@@ -59,11 +60,11 @@ body, h1, h2, h3, h4, h5, h6, p{
 .header__nav{
 
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-right: 5dvw;
-    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: 90%;
 }
 img {
     width: clamp(80px, 60%, 80px);
@@ -74,11 +75,20 @@ img {
     width: clamp(130px, 15vw, 120px);
   height: clamp(130px, 15vw, 120px);
     border-radius: 50%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem auto; /* centra en el eje horizontal */
+    border: 2px solid #acacac;
+    transition: all 0.4s ease-in-out;
+}
+.header__nav__item:hover{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.abtme{
+    transform: scale(1.64);
 }
 /*----- HEADER QUERIES -----*/
 
@@ -88,18 +98,14 @@ img {
        
     }
 }
-@media screen and (max-width :1000px){
-    .header__container{
-        margin: 0;
-       
-    }
+@media screen and (max-width :750px){
+    
     .header__container__name{
         text-align: center;
-        margin: 0;
+        margin: auto;
     }
     .header__nav{
         margin: 0;
-       
     }
     
 }
