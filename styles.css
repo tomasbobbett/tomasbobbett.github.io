@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.header{
+    z-index: -2;
+}
+/*------- HEADER SECTION -------*/
+.header__container{
+    background-color: #dedede; 
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 9px #7070707f;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    padding: 30px;
+    text-wrap: pretty;
+}
+/*----- HEADER NAME -----*/
+.header__container__name{
+    font-family:  "Cal Sans";
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin: auto;
+    display: inline-block;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin-left: 5% ;
+
+    position: relative;
+    padding: 0;
+    height: auto;
+    
+}   
+.header__container__name::before{
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: #dedede;
+    position: absolute;
+    right: 0;
+    animation: escribir 1s steps(15) both;
+    animation-delay: 0.5s, 1.5s;
+    z-index: 2;
+}
+
+.bar{    
+    display: inline-block;
+    animation: parpadear 1s infinite ;
+}
+
+/*----- HEADER NAV -----*/
+
+.header__nav{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5dvw;
+    gap: 20px;
+}
+img {
+    width: clamp(80px, 60%, 80px);
+    height: clamp(80px, 60%, 80px);
+    object-fit: contain;
+}
+.header__nav__item {
+    width: clamp(130px, 15vw, 120px);
+  height: clamp(130px, 15vw, 120px);
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto; /* centra en el eje horizontal */
+}
+/*----- HEADER QUERIES -----*/
+
+@media screen and (max-width :790px){
+    .header__container__name::before{
+        animation:none;
+       
+    }
+}
+@media screen and (max-width :1000px){
+    .header__container{
+        margin: 0;
+       
+    }
+    .header__container__name{
+        text-align: center;
+        margin: 0;
+    }
+    .header__nav{
+        margin: 0;
+       
+    }
+    
+}
+
+
+/*----- HEADER ANIMATIONS -----*/
+@keyframes parpadear {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+@keyframes escribir {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+}
