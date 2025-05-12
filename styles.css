@@ -23,6 +23,8 @@ body, h1, h2, h3, h4, h5, h6, p{
     text-shadow: 0px 0px 9px  #7070707f;
     flex-wrap: wrap;
     padding: 30px;
+    padding-bottom: 5px;
+    padding-right: 5px;
     text-wrap: pretty;
     gap: 10px;
 }
@@ -59,31 +61,31 @@ body, h1, h2, h3, h4, h5, h6, p{
 /*----- HEADER NAV -----*/
 
 .header__nav{
-    background: radial-gradient( #515151,#000);
+    background: radial-gradient( #e0f0f0,#ddf2f0c8);
     border-radius: 1000px;
-    border: 2.5px solid #000;
-    padding: 5px;
+    padding: 2px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-right: 0;
+    margin-right: 10px;
     min-height: 300px;
     min-width:20px;
-    padding-top: 7px;
-    padding-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: 0px 0px 20px #000000;
 }
 img {
-    max-height:80%;
-    max-width: 80%;
+    max-height:70%;
+    max-width: 70%;
     object-fit: contain;
     padding: 0;
     
 }
 .header__nav__item {
-    width: 35px;
-    height: 35px;
-    padding: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -94,12 +96,13 @@ img {
 }
 .header__nav__item:hover{
     background-color: #ffffff;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
 }
 
 .abtme{
-    transform: scale(1.4);
+    
+    transform:  scale(1.1)  translateX(-0.4px);
     overflow: hidden;
 }
 /*----- HEADER QUERIES -----*/
@@ -115,6 +118,7 @@ img {
     
     .header__container{
         flex-direction: column;
+        padding: 30px;
     }
     .header__container__name{
         text-align: center;
@@ -127,7 +131,7 @@ img {
         flex-shrink: 1;
         min-height: fit-content;
         width: 70%;
-        margin-bottom: 10px;
+        margin-bottom: -10px;
         padding: 5px 2px;
     }
   
