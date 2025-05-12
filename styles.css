@@ -33,7 +33,7 @@ body, h1, h2, h3, h4, h5, h6, p{
     font-weight: 100;
     letter-spacing: 3px;
     margin: auto;
-    margin-left:10dvw;
+    margin-left:10%;
     display: inline-block;
     font-size: clamp(2rem, 10vw,4rem);
     position: relative;
@@ -104,14 +104,14 @@ img {
 }
 /*----- HEADER QUERIES -----*/
 
-@media screen and (max-width :790px){
+@media screen and (max-width :800px){
     .header__container__name::before{
         animation:none;
        
     }
 }
 
-@media screen and (max-width :1140px){
+@media screen and (max-width :950px){
     
     .header__container{
         flex-direction: column;
@@ -120,6 +120,7 @@ img {
     .header__container__name{
         text-align: center;
         margin: auto;
+        margin-bottom:0px ;
     }
     
     .header__nav{
