@@ -71,7 +71,7 @@ body, h1, h2, h3, h4, h5, h6, p{
     margin-right: 10px;
     min-height: 300px;
     min-width:20px;
-    box-shadow: 0px 0px 15px #00000070;
+    box-shadow: 0px 0px 15px #00000044;
 }
 img {
     max-height:90%;
@@ -92,9 +92,7 @@ img {
     transition: all 0.2s ease;
 }
 .header__nav__item:hover{
-    width: 35px;
     filter: invert(40%);
-    height: 35px;
 }
 
 .abtme{
@@ -139,8 +137,6 @@ img {
   
     
 }
-
-
 /*----- HEADER ANIMATIONS -----*/
 @keyframes parpadear {
     0%, 100%{
@@ -158,52 +154,59 @@ img {
         width: 0%;
     }
 }
+
+/*----- LANGUAGES SECTION ------*/
 .languages{
+    margin: 0;
     height: 100dvh;
     width: 100%;
-    background-color: #dedede; 
+    background: linear-gradient(to bottom, #dedede, #f7f7f7c8); 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.languages__title{
+    margin-bottom: 50px;
+    letter-spacing: 3px;
 }
 
 .languages__container{
     display: grid;
     place-content: center;
     place-items: center;
-    box-shadow: 0px 0px 15px #000000b2;
     grid-template-columns: repeat(4, minmax(50px, 1fr));
+    min-width: 70%; 
+    min-height: 35%;
     grid-template-rows:100px 100px;
     border-radius: 20px;
     margin: 10px;
-    background-color: #fff;
     padding: 30px;
 }
 .languages__container__language img{
     max-height: 100px;
+    transition: all 0.2s ease;
     
-}
-.languages__container__language:nth-child(5){
-    grid-column-start: 3;
-    grid-column-end: 5;
-    
-}
-.languages__container__language:nth-child(5) img{
-    
-    transform: scale(0.7);
-    
-}
-.languages__container__language:nth-child(3) img {
-    transform: scale(0.8);
 }
 .languages__container__language:nth-child(2){
     grid-column-start: 2;
     grid-column-end:4;
     
 }
+.languages__container__language:nth-child(3) img {
+    transform: scale(0.8);
+}
 .languages__container__language:nth-child(4){
     grid-column-start: 1;
     grid-column-end: 3;
+}
+.languages__container__language:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.languages__container__language:nth-child(5) img{
+    transform: scale(0.7);
 }
 .languages__container__language{
     width: 100%;
@@ -212,3 +215,53 @@ img {
     justify-content: center;
     align-items: center;
 }
+.languages__container__language img:hover{
+    filter: sepia(0.5);
+}
+
+/*EXPERIENCE SECTION*/
+.experience{
+    margin: 0;
+    text-align: center;
+    background-color: #f7f7f7c8 ;
+    height: 200dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.experience__title{
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+.experience__container{
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-template-rows: repeat(2, minmax(500px, 1fr));
+    min-width: 70%; 
+    gap: 10px;
+}
+
+.experience__container__proyect{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #0000003d;
+    background-color: #fff;
+    transition: all 0.35s ease;
+}
+.experience__container__proyect:hover{
+    box-shadow: 0px 0px 10px #000000f8;
+}
+
+/*
+HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TODO EN UNA COLUMNA
+*/
