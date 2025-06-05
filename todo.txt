@@ -1,0 +1,4 @@
+-Add github and contact buttons
+-Change projects visualisation to one per page hoizontal 
+-Change colors aboutme and home page 
+-Add javascript and node as language skill
