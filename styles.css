@@ -221,9 +221,9 @@ img {
 .experience{
     text-align: center;
     background: linear-gradient(#dedede , #cec9d7);
-    height: 100dvh;
     width: 100%;
     display: flex;
+    gap:50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -232,35 +232,67 @@ img {
     margin-top: 50px;
     letter-spacing: 3px;
 }
-.experience__container{
-    max-width: 80%;
-    display: grid;
-    place-content: center;
-    place-items: center;
-    grid-template-columns: repeat(3, minmax(50px, 1fr));
-    grid-template-rows: repeat(1, minmax(500px, 1fr));
-    min-width: 70%; 
-    gap: 10px;
-}
+
 
 .experience__container__proyect{
     display: grid;
-    height: 50%;
-    width: 100%;
+    grid-template-rows:  1fr 2fr;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    padding-top: 20px;
+    padding-left: 5px;
+
+    text-wrap: balance ;
+    height: 65dvh;
+    width: 65%;
+    margin-left: 0;
+    margin-top: 15px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgba(72, 86, 105, 0.2);
+    box-shadow: 0px 0px 20px rgba(108, 108, 108, 0.678);
+    background-color: #dadada;
+    margin-bottom: 30px;
+    transition: all 0.35s ease;
+}
+.desc__container__grid{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    font-size: clamp(0.7rem, 2vw, 1.2rem);
+}
+.tittle__container__grid{
+    font-weight: 100;
+    font-size: clamp(1rem, 2vw, 3rem);
+    color: #1a0f2e;
+    letter-spacing: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px #00000078;
-    border: 1px solid #000;
-    background-color: #fff;
-    transition: all 0.35s ease;
 }
-.experience__container__proyect h3{
-    font-weight: 100;
+.img__container__tablero__grid {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__container__tablero__grid img{
+    border-radius: 10px;
+    height: 100%;
+  
+}
+.language__img__container__grid{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .experience__container__proyect:hover{
-    box-shadow: 0px 0px 10px #000000f8;
+    box-shadow: 0px 0px 20px rgba(43, 85, 148, 0.561);
 }
 
 /*
@@ -274,7 +306,7 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#cec9d7,#afa1ddc8 );
+    background: linear-gradient(#cec9d7,#c6c2d4c8 );
 }
 .aboutme__section__title{
     margin-top: 0px;
