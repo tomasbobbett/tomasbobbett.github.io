@@ -292,7 +292,7 @@ img {
 .language__img__container__grid{
     grid-row-start: 1;
     grid-column-start: 2;
-    height:100px;
+    height:50px;
     display: flex;
     justify-content: center;
     align-items: center;
