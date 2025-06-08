@@ -241,7 +241,7 @@ img {
     padding: 20px;
     padding-top: 20px;
     text-wrap: balance ;
-    max-height:350px ;
+    max-height:400px ;
     margin: 15px 20%;
     justify-items: center;
     align-items: center;
@@ -294,7 +294,7 @@ img {
     grid-column-start: 2;
     height:50px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: top;
     z-index: 1;
 }
@@ -323,7 +323,7 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
         grid-template-rows:2fr 1fr;
         grid-template-columns:3fr 1fr;
         margin: 15px 10%;
-        padding: 10px 5px;
+        padding: 5px 5px;
         position:relative;
         background-image: url(img/tablero.jpg);
         background-size: cover;
@@ -334,6 +334,11 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
         grid-row-start: 2;
         grid-column-start:1 ;
         grid-column: span 2;
+    }
+    .language__img__container__grid{
+        position: absolute;
+        top:8;
+        right:8
     }
     .img__container__tablero__grid{
         grid-row-start: 3;
