@@ -236,12 +236,13 @@ img {
 
 .experience__container__proyect{
     display: grid;
-    grid-template-rows:  1fr 2fr;
+    grid-template-rows: 0.5fr 1fr 4fr;
+    gap: 5px;
     grid-template-columns: 3fr 1fr;
     padding: 20px;
     padding-top: 20px;
     text-wrap: balance ;
-    max-height:400px ;
+    max-height:350px ;
     margin: 15px 20%;
     justify-items: center;
     align-items: center;
@@ -251,9 +252,10 @@ img {
     background-color: #d7d6e2;
     margin-bottom: 30px;
     transition: all 0.35s ease;
+    position: relative;
 }
 .desc__container__grid{
-    grid-row-start: 2;
+    grid-row-start: 3;
     grid-column-start: 2;
     font-size: clamp(0.9rem, 2vw, 1.2rem);
     font-weight: 100;
@@ -267,11 +269,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-row-start: 1;
+    grid-row-start: 2;
+    grid-column: span 2;
     z-index: 1;
 }
 .img__container__tablero__grid {
-    grid-row-start: 2;
+    grid-row-start: 3;
     grid-column-start: 1;
     display: flex;
     justify-content: center;
@@ -282,22 +285,30 @@ img {
 }
 .img__container__tablero__grid img{
     border-radius: 10px;
-  height: 90%;
-
+    height: 90%;
     max-width: 100%;
     filter:sepia(0.5) hue-rotate(180deg);
-
-  
 }
-.language__img__container__grid{
-    grid-row-start: 1;
-    grid-column-start: 2;
-    height:50px;
+.languages__used__container__project a{
     display: flex;
     justify-content: center;
-    align-items: top;
-    z-index: 1;
+    align-items: center;
 }
+.languages__used__container__project{
+    height: 100%;
+    width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column: span 2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;  
+}
+.c-logo-img{
+    height: 30px;
+}
+
 .experience__container__proyect:hover{
     box-shadow: 0px 0px 20px rgba(43, 85, 148, 0.561);
 }
@@ -306,51 +317,53 @@ img {
 HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TODO EN UNA COLUMNA
 */
 @media screen and (max-width :850px){
-    .blackout__project{
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        border-radius: 10px;
-        background-color: #000322a9;
-    }
+    
     .desc__container__grid{
         color:white;
+        grid-row-start: 3;
+        grid-column-start:1 ;
     }
     .tittle__container__grid{
+        grid-column-start: 1;
+        grid-row-start: 1;
         color: white;
     }
-    .experience__container__proyect{
-        grid-template-rows:2fr 1fr;
-        grid-template-columns:3fr 1fr;
-        margin: 15px 10%;
-        padding: 5px 5px;
-        position:relative;
-        background-image: url(img/tablero.jpg);
-        background-size: cover;
-        background-position: center;
 
+    .experience__container__proyect{
+        grid-template-rows:2fr 1fr 2fr;
+        grid-template-columns: 1fr;
+        height: 200px;
+        margin: 15px 10%;
+        padding: 10px 20px;
+        position:relative;
+        background-color: #03002e;
+        justify-items: center;
+    }
+    .languages__used__container__project{
+        height: 100%;
+        width: 100%;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        display: flex;
+        justify-content: center;
+        gap: 10px;  
+        align-items: center;
+        color: white;
+    }
+    .languages__used__container__project img:last-child{
+        filter: invert(100%);
     }
     .desc__container__grid{
-        grid-row-start: 2;
+        grid-row-start: 3;
         grid-column-start:1 ;
-        grid-column: span 2;
-    }
-    .language__img__container__grid{
-        position: absolute;
-        top:8px;
-        height:20px;
-        right:8px;
+        
     }
     .img__container__tablero__grid{
-        grid-row-start: 3;
-        grid-column-start: 1;   
-        grid-column: span 2;
-        grid-row: span 2;
-        width: 100%;
+        
         display: none;
     }
 }
-
+/* ------------------ABOUT ME SECTION---------------- */
 .aboutme__section{
     height: 100dvh;
     width: 100%;
@@ -440,6 +453,5 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     }
     .aboutme__card{
         max-width: 90%;
-       
-  
+    
 }
