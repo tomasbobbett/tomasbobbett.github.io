@@ -338,6 +338,7 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     .language__img__container__grid{
         position: absolute;
         top:8px;
+        height:20px;
         right:8px;
     }
     .img__container__tablero__grid{
