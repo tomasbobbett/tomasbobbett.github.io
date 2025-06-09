@@ -24,7 +24,7 @@ body, h1, h2, h3, h4, h5, h6, p{
     padding: 30px;
     padding-bottom: 5px;
     padding-right: 5px;
-    text-wrap: pretty;
+    text-wrap: balance;
     gap: 10px;
 }
 /*----- HEADER NAME -----*/
@@ -382,17 +382,17 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
 
 .aboutme__card{
     display: grid;
-    max-width: 60%;
-    max-height: 300px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    max-width: 500px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
     background-color: #f7f7f7c8;
     /* padding: 10px; */
     border-radius: 15px;
     box-shadow: 0px 0px 20px  #504f4f;
-    color: rgb(240, 250, 255);
+    color: rgb(10, 10, 10);
+    background: linear-gradient(to right,#756972 ,#7d708d,  #868a9a );
 }
 .aboutme__card__name{
     border-radius: 0 15px 0 0;
@@ -404,7 +404,6 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to right,#7d708d ,  #868a9a);
 }
 .aboutme__card__name h2{
     font-size: clamp(1rem, 2.5vw, 3rem);
@@ -420,8 +419,8 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     width: 100%;
     height: 100%;
     grid-column: span 2;
-    letter-spacing: 1.3px;
-    background: linear-gradient(to right,#756972 ,#7d708d,  #868a9a );
+    letter-spacing: 1.1px;
+    
 }
 .aboutme__card__description p{
     text-align: center;
@@ -432,15 +431,15 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     border-radius: 50%;
     height: clamp(50px, 20vw, 165px);
     object-fit: cover;
-    
-    
+    border: solid #1328485d 2px;
+    filter: drop-shadow(0px 0px 10px #000000c6);
 }
 .aboutme__card__imgcont{
     width: 100%;
     height: 100%;
-    padding: 15px 0;
+    padding: 9px 0;
     border-radius:15px  0 0 0;
-    background: linear-gradient(to right, #756972, #7d708d);
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,9 +448,10 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
 
 @media screen and (max-width :800px){
     .aboutme__card__description{
-        padding: 0px 20px 10px 20px;
+        padding: 0px 30px 10px 30px;
     }
     .aboutme__card{
-        max-width: 90%;
+        max-width: 80%;
+    }
     
 }
