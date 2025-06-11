@@ -20,7 +20,6 @@ body, h1, h2, h3, h4, h5, h6, p{
     justify-content: center;
     align-items: center;
     text-shadow: 0px 0px 9px  #7070707f;
-    flex-wrap: wrap;
     padding: 30px;
     padding-bottom: 5px;
     padding-right: 5px;
@@ -31,14 +30,11 @@ body, h1, h2, h3, h4, h5, h6, p{
 .header__container__name{
     font-weight: 100;
     letter-spacing: 3px;
-    margin: auto;
-    margin-left:10%;
-    display: inline-block;
     font-size: clamp(2rem, 10vw,4rem);
-    position: relative;
     padding: 0;
     height: auto;
-    
+    display: inline-block;
+    margin-right: 100px;
 }   
 .header__container__name::before{
     content: '';
@@ -66,6 +62,11 @@ body, h1, h2, h3, h4, h5, h6, p{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    z-index: 30;
+    transform: translatey(-50%);
     align-items: center;
     margin-right: 10px;
     min-height: 300px;
@@ -100,26 +101,22 @@ img {
 }
 /*----- HEADER QUERIES -----*/
 
-@media screen and (max-width :800px){
-    .header__container__name::before{
-        animation:none;
-       
-    }
-}
-
 @media screen and (max-width :950px){
-    
     .header__container{
         flex-direction: column;
         padding: 30px;
     }
     .header__container__name{
         text-align: center;
-        margin: auto;
-        margin-bottom:0px ;
+        margin:0;
+        text-wrap: balance;
     }
     
     .header__nav{
+        position: absolute;
+        bottom:30px;
+        left: 50%;
+        transform: translateX(-50%);
         margin:auto;
         flex-flow: row;
         flex-shrink: 1;
@@ -132,9 +129,6 @@ img {
         transform:  scale(1.25);
 
     }
-
-  
-    
 }
 /*----- HEADER ANIMATIONS -----*/
 @keyframes parpadear {
@@ -166,7 +160,7 @@ img {
 }
 
 .languages__title{
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     letter-spacing: 3px;
 }
 
@@ -176,7 +170,7 @@ img {
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,  1fr);
-   
+    width: 80%;
     border-radius: 20px;
     margin: 10px;
     padding: 30px;
@@ -216,7 +210,7 @@ img {
     flex-direction: column;
 }
 .experience__title{
-    margin-top: 50px;
+    margin-top: 0px;
     letter-spacing: 3px;
 }
 
@@ -443,6 +437,7 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     }
     .aboutme__card{
         max-width: 85%;
+        max-height: 300px;
     }
     
 }
