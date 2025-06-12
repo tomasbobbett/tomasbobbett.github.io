@@ -358,6 +358,7 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
 .aboutme__section__title{
     margin-top: 0px;
     letter-spacing: 3px;
+    text-align: center;
     color: #03002e;
 }
 
@@ -365,7 +366,7 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     display: grid;
     max-width: 500px;
     max-height: 400px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 2fr;
     justify-items: center;
     align-items: center;
@@ -375,7 +376,7 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     box-shadow: 0px 0px 20px  #504f4f;
     color: rgb(10, 10, 10);
     gap:5px;
-    background: linear-gradient(to right,#756972 ,#7d708d,  #868a9a );
+    background: linear-gradient(to right,#b78aac ,#7d708d,  #6b7394 );
 }
 .aboutme__card__name{
     border-radius: 0 15px 0 0;
@@ -394,6 +395,40 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     letter-spacing: 3px;
     width: 50%;
 }
+.social-logo{
+    height:30px;
+    text-align: center;
+    filter: drop-shadow(0px 10px 10px #21153d);
+    transition: all 0.2s ease;
+}
+.aboutme__card__logo__container{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.aboutme__card__logo__container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100%;
+}
+.github-text{
+    font-size: 15px;
+    text-align: center;
+}
+
+.social-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 5px #21153d6a);
+}
+
+
 .aboutme__card__description{
     display: flex;
     border-radius:  0 0 15px 15px;
@@ -401,8 +436,8 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     align-items: center;
     text-align: center;
     width: 100%;
+    grid-column: span 3;
     height: 100%;
-    grid-column: span 2;
     letter-spacing: 1.1px;
     text-wrap: balance;
     
@@ -418,13 +453,18 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     height: clamp(50px, 20vw, 165px);
     object-fit: cover;
     border: solid #1328485d 2px;
+    height: 100px;
     filter: drop-shadow(0px 0px 10px #000000c6);
+    transition: all 0.6s ease;
+    
+}
+.aboutme__card__img:hover{
+    transform: scale(1.1);
 }
 .aboutme__card__imgcont{
-    grid-column: span 2;
     width: 100%;
     height: 100%;
-    border-radius:15px  0 0 0;
+    border-radius:15px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,6 +474,13 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
 @media screen and (max-width :800px){
     .aboutme__card__description p{
         text-wrap: balance;
+    }
+    .github-text{
+        font-size: 12px;
+    }
+    .aboutme__card__socials img{
+        height:25px;
+        text-align: center;
     }
     .aboutme__card{
         max-width: 85%;
