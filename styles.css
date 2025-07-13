@@ -13,6 +13,11 @@ body, h1, h2, h3, h4, h5, h6, p{
     z-index: -2;
 }
 /*------- HEADER SECTION -------*/
+.header__nav__container{
+    display: flex;
+    justify-content: space-between;
+
+}
 .header__container{
     background-color: #dedede; 
     height: 100dvh;
@@ -21,7 +26,7 @@ body, h1, h2, h3, h4, h5, h6, p{
     align-items: center;
     text-shadow: 0px 0px 9px  #7070707f;
     padding: 30px;
-    padding-bottom: 5px;
+   
     padding-right: 5px;
     text-wrap: balance;
     gap: 10px;
@@ -35,6 +40,7 @@ body, h1, h2, h3, h4, h5, h6, p{
     height: auto;
     display: inline-block;
     margin-right: 100px;
+    position: relative;
 }   
 .header__container__name::before{
     content: '';
@@ -113,7 +119,7 @@ img {
     }
     
     .header__nav{
-        position: absolute;
+        position: fixed;
         bottom:30px;
         left: 50%;
         transform: translateX(-50%);
