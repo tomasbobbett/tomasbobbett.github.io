@@ -69,7 +69,6 @@ body, h1, h2, h3, h4, h5, h6, p{
     justify-content: space-around;
     position: fixed;
     right: 10px;
-    top: 50%;
     z-index: 30;
     transform: translatey(-50%);
     align-items: center;
@@ -93,7 +92,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     transition: all 0.2s ease;
 }
 .header__nav__item:hover{
@@ -125,7 +123,7 @@ img {
         margin:auto;
         flex-flow: row;
         flex-shrink: 1;
-        min-height: fit-content;
+        min-height: 30px;
         width: 70%;
         margin-bottom: -10px;
         padding: 5px 2px;
@@ -488,7 +486,7 @@ HACER QUERIES DESPUES DE 1100 QUE SE HAGAN DOS COLUMNAS Y YA DESPUES SE PONGA TO
     
 }
 
-.footer__section{
+.footer__section{   
     height: 10dvh;
     width: 100%;
     font-family: sans-serif;
