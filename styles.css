@@ -62,7 +62,6 @@ body, h1, h2, h3, h4, h5, h6, p{
 
 .header__nav{
     background: radial-gradient( #d1d1d1,#cbcbcbc8);
-    border-radius: 1000px;
     padding: 4px;
     display: flex;
     flex-direction: column;
