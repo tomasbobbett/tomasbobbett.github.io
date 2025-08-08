@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta and Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -11,121 +12,93 @@
     <title>Tomás Bobbett - Portfolio Web</title>
 </head>
 <body>
+    <!-- ------------------ HEADER ------------------ -->
     <header class="header">
         <div class="header__container">
             <h1 class="header__container__name">👋Hi! I'm Tomás Bobbett ...<span class="bar">|</span></h1>
             <div class="header__nav__container">
+                <!-- Navigation Links -->
                 <div class="header__nav">
-                    <div >
-                        <a  class="header__nav__item" href="#lang">
-                            <img src="img/programming-language-icon-12.png" alt="">
-                        </a>
-                    </div>
+                    <a class="header__nav__item" href="#lang">
+                        <img src="img/programming-language-icon-12.png" alt="">
+                    </a>
                 </div>
                 <div class="header__nav">
-                    <div >
-                        <a class="header__nav__item" href="#lang">
-                            <img src="img/programming-language-icon-12.png" alt="">
-                        </a>
-                    </div>
-                    <div >
-                        <a class="header__nav__item" href="#exp">
-                            <img src="img/exp.png" alt="">
-                        </a>
-                    </div>
-                    <div >
-                        <a class="header__nav__item" href="#aboutme">
-                            <img class="abtme" src="img/abtme.png" alt="">
-                        </a>
-                    </div>
+                    <a class="header__nav__item" href="#lang">
+                        <img src="img/programming-language-icon-12.png" alt="">
+                    </a>
+                    <a class="header__nav__item" href="#exp">
+                        <img src="img/exp.png" alt="">
+                    </a>
+                    <a class="header__nav__item" href="#aboutme">
+                        <img class="abtme" src="img/abtme.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- ------------------ MAIN CONTENT ------------------ -->
     <main>
+        <!-- Languages Section -->
         <section id="lang" class="languages">
             <h2 class="languages__title">My Skills:</h2>
             <div class="languages__container">
-                <div class="languages__container__language">
-                    <img src="img/htmLogo.png" alt="">
+                <!-- Skill Icons -->
+                <div class="languages__container__language"><img src="img/htmLogo.png" alt=""></div>
+                <div class="languages__container__language"><img src="img/nodejsLogo.png" alt=""></div>
+                <div class="languages__container__language"><img src="img/cssLogo.png" alt=""></div>
+                <div class="languages__container__language"><img src="img/githubLogo.png" alt=""></div>
+                <div class="languages__container__language"><img src="img/JavaScript-logo.png" alt=""></div>
+                <div class="languages__container__language"><img src="img/CLogo.png" alt=""></div>
+                <div class="languages__container__language"><img src="img/GoLogo.png" alt=""></div>
+                <div class="languages__container__language"><img src="img/pythonLogo.png" alt=""></div>
+                <div class="languages__container__language"><img src="img/sqlLogo.png" alt=""></div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="exp" class="experience">
+            <h2 class="experience__title">My Experience Programming:</h2>
+            <!-- Project 1 -->
+            <div class="experience__container__proyect">
+                <div class="blackout__project"></div>
+                <div class="tittle__container__grid">
+                    <h3>2D Farm game developed with C</h3> 
                 </div>
-                <div class="languages__container__language">
-                    <img src="img/nodejsLogo.png" alt="">
+                <div class="languages__used__container__project">
+                    <img class="c-logo-img" src="img/CLogo.png" alt="">
+                    |
+                    <a target="_blank" href="https://github.com/tomasbobbett/2D-Farm-game-developed-with-C"><img src="img/githubLogo.png" class="c-logo-img" alt=""></a>
                 </div>
-                <div class="languages__container__language">
-                    <img src="img/cssLogo.png" alt="">
+                <div class="img__container__tablero__grid">
+                    <img class="tablero-img"src="img/tablero.jpg" alt="">
                 </div>
-                <div class="languages__container__language">
-                    <img src="img/githubLogo.png" alt="">
+                <div class="desc__container__grid">
+                    <p>University project where i had to develop a simple 2D game for the CMD.</p>
                 </div>
-                <div class="languages__container__language">
-                    <img src="img/JavaScript-logo.png" alt="">
+            </div>
+            <!-- Project 2 -->
+            <div class="experience__container__proyect">
+                <div class="blackout__project"></div>
+                <div class="tittle__container__grid">
+                    <h3>Python Order Management System</h3> 
                 </div>
-                <div class="languages__container__language">
-                    <img src="img/CLogo.png" alt="">
+                <div class="languages__used__container__project">
+                    <img class="c-logo-img" src="img/pythonLogo.png" alt="">
+                    |
+                    <a target="_blank" href="https://github.com/tomasbobbett/Python-Order-Management-System"><img src="img/githubLogo.png" class="c-logo-img" alt=""></a>
                 </div>
-                <div class="languages__container__language">
-                    <img src="img/GoLogo.png" alt="">
+                <div class="img__container__tablero__grid">
+                    <img style="filter: hue-rotate(0);" class="tablero-img"src="img/enanitos.jpg" alt="">
                 </div>
-                <div class="languages__container__language">
-                    <img src="img/pythonLogo.png" alt="">
-                </div>
-                <div class="languages__container__language">
-                    <img src="img/sqlLogo.png" alt="">
+                <div class="desc__container__grid">
+                    <p>A command-line Python app to manage vegetable orders and customers using CSV files.</p>
                 </div>
             </div>
         </section>
-        <section id="exp" class="experience">
-            <h2 class="experience__title">My Experience Programming:</h2>
-                <div  class="experience__container__proyect">
-                    <div class="blackout__project"></div>
-                    <div class="tittle__container__grid">
-                        <h3>2D Farm game developed with C</h3> 
-                    </div>
-                   
-                        <div class="languages__used__container__project">
-                            <img class="c-logo-img" src="img/CLogo.png" alt="">
-                            |
-                            <a target="_blank" href="https://github.com/tomasbobbett/2D-Farm-game-developed-with-C"><img src="img/githubLogo.png" class="c-logo-img" alt=""></a>
 
-                        </div>
-                    
-                    <div class="img__container__tablero__grid">
-                        <img class="tablero-img"src="img/tablero.jpg" alt="">
-                    </div>
-                    <div class="desc__container__grid">
-
-                        <p>University project where i had to develop a simple 2D game for the CMD.</p>
-                    </div>
-                        <!-- add project short description -->
-                        <!-- add github repo button -->
-                </div>
-                <div  class="experience__container__proyect">
-                    <div class="blackout__project"></div>
-                    <div class="tittle__container__grid">
-                        <h3>Python Order Management System</h3> 
-                    </div>
-                   
-                        <div class="languages__used__container__project">
-                            <img class="c-logo-img" src="img/pythonLogo.png" alt="">
-                            |
-                            <a target="_blank" href="https://github.com/tomasbobbett/Python-Order-Management-System"><img src="img/githubLogo.png" class="c-logo-img" alt=""></a>
-                        </div>
-                    
-                    <div class="img__container__tablero__grid">
-                        <img style="filter: hue-rotate(0);" class="tablero-img"src="img/enanitos.jpg" alt="">
-                    </div>
-                    <div class="desc__container__grid">
-
-                        <p>
-                            A command-line Python app to manage vegetable orders and customers using CSV files.
-                        </p>
-                    </div>
-                        <!-- add project short description -->
-                        <!-- add github repo button -->
-                </div>
-                <!-- add more projects -->
-        </section>
+        <!-- About Me Section -->
         <section id="aboutme" class="aboutme__section">
             <h2 class="aboutme__section__title">About Me</h2>
             <div class="aboutme__card">
@@ -134,9 +107,7 @@
                     <a target="_blank" href="https://github.com/tomasbobbett"><img src="img/githubLogo.png" class="social-logo" alt=""></a>
                 </div>
                 <div class="aboutme__card__imgcont">
-                    
-                    <img class="aboutme__card__img" src="img/Foto Carnet.jpeg  " alt="">
-                    
+                    <img class="aboutme__card__img" src="img/Foto Carnet.jpeg" alt="">
                 </div>
                 <div class="aboutme__card__logo__container">
                     <span class="github-text">My Linkedin:</span>
@@ -148,10 +119,6 @@
             </div>
         </section>
     </main>
-    <!-- <div class="footer__section">
-        <div class="footer__container">
-            <h3>Contact:  </h3>
-        </div>
-    </div> -->  
 </body>
 </html>
+    
